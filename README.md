@@ -10,10 +10,24 @@ Steve's parents want to diversify their investment portfolio by investing in the
 
 The purpose of this analysis was to help Steve's parents determine which green energy stocks to invest in. Using ticker, daily pricing (high, low, closing prices), and daily volume from 12 different **green** stocks, I calculated the total daily volume and and annual return for each stock using VBA in Excel. This analysis will help Steve's parents determine which stocks invest their money.
 
-## Analysis and Challenges
+## Results and Analysis
 
-### Analysis of Outcomes Based on Launch Date
+### VBA Code Used in this Analysis
+
+### Analysis of 2017 Green Energy Stock Data
 
 #### Overview
 
 #### Process 
+
+### Analysis of 2018 Green Energy Stock Data
+
+#### Overview
+
+#### Process 
+
+## Summmary
+
+### Advantages and Disadvantages of Refactoring Code
+
+### Advantages and Disadvantages of Refactoring Code from this 'Analysis of Green Energy Stock Data'
