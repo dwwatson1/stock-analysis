@@ -155,7 +155,19 @@ To complete the analysis of 2017 green energy stock data for Steve and his paren
 
 #### Process and Results
 
-Using the stock data from 12 green energy stocks, I built my __original script__ run an analysis on all tickers for 2017. 
+Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**. To display the output neatly, I added a script bold the column headings, add commas to the **Total Daily Volume** column, and  show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. 
+
+I was then ready to run my __original script__ script. Because I added a spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
+
+Code in script:
+ MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+ 
+ Message box display:
+![2017_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Stock_Macro.PNG)
+
+The 2017 results showed positive returns for every stock but $TERP:
+
+![2017_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Refactor_Analysis.PNG)
 
 ### Analysis of 2018 Green Energy Stock Data
 
