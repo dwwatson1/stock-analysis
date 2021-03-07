@@ -8,7 +8,7 @@ Steve's parents want to diversify their investment portfolio by investing in the
 
 ### Purpose
 
-The purpose of this analysis was to help Steve's parents determine which green energy stocks to invest in. Using ticker, daily pricing (high, low, closing prices), and daily volume from 12 different **green** stocks, I calculated the total daily volume and and annual return for each stock using a VBA script in Excel. Steve specified that he wanted to expand the dataset to include the entire stock market. To do so required a refactored VBA script, one that would provide the same functionality as my first script but run faster. This analysis will not only help Steve's parents determine which stocks invest their money but also allow Steve to use my model for quick, future analysis on thousands of stocks. The excel workbook with both VBA scripts can be found here: [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm)
+The purpose of this analysis was to help Steve's parents determine which green energy stocks to invest in. Using ticker, daily pricing (high, low, closing prices), and daily volume from 12 different **green** stocks, I calculated the total daily volume and and annual return for each stock using a VBA script in Excel. Steve specified that he wanted to expand the dataset to include the entire stock market. To do so required a refactored VBA script, one that would provide the same functionality as my first script but run faster. This analysis will not only help Steve's parents determine which stocks invest their money but also allow Steve to use my model for quick, future analysis on thousands of stocks. The excel workbook with both VBA scripts can be found here: [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm).
 
 ## Results and Analysis
 
@@ -151,7 +151,7 @@ The purpose of this analysis was to help Steve's parents determine which green e
 
 #### Overview
 
-To complete the analysis of 2017 green energy stock data for Steve and his parents, I need to create a VBA script to loop through the data of the 12 stocks provided. I'll refer to the first script as the __original script__ in this section. To meet Steve's expectation of being able to use my model in the future for thousands stocks, I needed to create a more efficient, refactored VBA script. I'll refer to the second script as the __refactored script__ in this section.
+To complete the analysis of 2017 green energy stock data for Steve and his parents, I need to create a VBA script to loop through the data of the 12 stocks provided. I'll refer to the first script as the [Original_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Original_Script.bas) in this section. To meet Steve's expectation of being able to use my model in the future for thousands stocks, I needed to create a more efficient, refactored VBA script. I'll refer to the second script as the [Refactored_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Refactored_Script.bas) in this section.
 
 #### Process and Results
 
