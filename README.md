@@ -161,7 +161,7 @@ Using the stock data from 12 green energy stocks, I built my __original script__
 
 Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
 
-[Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
+![Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
 
 
 
