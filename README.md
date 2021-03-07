@@ -15,10 +15,9 @@ The purpose of this analysis was to help Steve's parents determine which green e
 ### VBA Code Used in this Analysis
 
 Sub AllStocksAnalysisRefactored()
-
     Dim startTime As Single
     Dim endTime  As Single
-
+    
     yearValue = InputBox("What year would you like to run the analysis on?")
 
     startTime = Timer
@@ -103,7 +102,6 @@ Sub AllStocksAnalysisRefactored()
          If Cells(i, 1).Value = tickers(tickerIndex) And Cells(i + 1, 1).Value <> tickers(tickerIndex) Then
             tickerIndex = tickerIndex + 1
         End If
-
 Next i
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
@@ -145,7 +143,6 @@ Next i
  
     endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
-
 End Sub
 
 
