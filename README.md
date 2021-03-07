@@ -199,11 +199,11 @@ I repeated running the two scripts but specifying the year **2018** in the popup
 
 __Original script__ timing
 
-https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Stock_Macro.PNG
+![2018_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Stock_Macro.PNG)
 
 __Refactored script__ timing
 
-https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG
+![VBA_Challenge_2018](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
 The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively. $TERP was the only stock that had negatives returns for both years. 
 
