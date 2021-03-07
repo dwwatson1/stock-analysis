@@ -155,13 +155,19 @@ To complete the analysis of 2017 green energy stock data for Steve and his paren
 
 #### Process and Results
 
-Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**. To display the output neatly, I added a script bold the column headings, add commas to the **Total Daily Volume** column, and  show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. 
+Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**.  I was able to assign this macro to a button called **Year Analysis**. I was then ready to run my __original script__ script. After running it, a popup box appeared asking __What year would you like to run the analysis on?__ I specified that I wanted to see 2017 data only. 
 
-I was then ready to run my __original script__ script. After running it, a popup box appeared asking __What year would you like to run the analysis on?__ I specified that I wanted to see 2017 data only. 
+![Year_Analysis_Button](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis_Button.PNG)
+
+Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
 
 [Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
 
-Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
+
+
+To display the output neatly, I added a script bold the column headings, add commas to the **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**
+
+
 
 Code in script:
 
@@ -215,8 +221,10 @@ $ENPH saw the best return from 2017 - 2018. As investor myself thinking long-ter
 
 ### Advantages and Disadvantages of Refactoring Code
 
+Refactoring code is advantageous because it can take the same output and make the process more neat and efficient. By neat, I mean formatted and organized in a series of steps. This allows me (or even Steve) to look at the code and understand the process. This is helpful for a VBA novice like me. I'm still trying to wrap my head around the logic of each step, but because I'm process-oriented, the organization keeps me on track. 
 
+The disadvantages to refactoring code is that it can be time consuming to create and at times, you may have no idea how long it'll take you to complete the process. The refactoring process could end up getting you stuck or breaking the code. Given how complex the code is, it can be overwhelming debug things, especially for someone like me who is just learning VBA.
 
 ### Advantages and Disadvantages of Refactoring Code from this 'Analysis of Green Energy Stock Data'
 
-
+I learned a lot by going through the process refactoring code from my Analysis of Green Energy Stock Data. By creating an organized, step-by-step, guide within the refactored code, the logic of the individual pieces of code started to click with me. The cohesiveness  
