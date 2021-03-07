@@ -195,7 +195,7 @@ I repeated the same steps used in the 2017 analysis for the 2018 analysis of gre
 
 #### Process and Results
 
-I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ Similaryly to 2017 results, the __original script__ took longer than the __refactored script__. The time difference was .74 seconds compared to .26 seconds.
+I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ Similaryly to 2017 results, the __original script__ took longer than the __refactored script__. The time difference was .86 seconds compared to .21 seconds.
 
 __Original script__ timing
 
