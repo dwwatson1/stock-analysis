@@ -159,15 +159,9 @@ Using the stock data from 12 green energy stocks, I built my __original script__
 
 ![Year_Analysis_Button](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis_Button.PNG)
 
-Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
-
 ![Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
 
-
-
-To display the output neatly, I added a script bold the column headings, add commas to the **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**
-
-
+Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
 
 Code in script:
 
@@ -177,7 +171,9 @@ MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & 
  
 ![2017_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Stock_Macro.PNG)
 
-The 2017 results took just under 0.8 seconds to display positive returns for every stock but $TERP:
+The 2017 results took just under 0.8 seconds to display. However, we needed it to display the output neatly, I added a script bold the column headings, add commas to the numbers in **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**.
+
+The 2017 results displayed positive (green) returns for every stock but $TERP:
 
 ![2017_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Refactor_Analysis.PNG)
 
