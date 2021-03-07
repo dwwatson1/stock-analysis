@@ -171,7 +171,7 @@ MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & 
  
 ![2017_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Stock_Macro.PNG)
 
-The 2017 results took just under 0.8 seconds to display. However, we needed it to display the output neatly, I added a script bold the column headings, add commas to the numbers in **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**.
+The 2017 results took almost a second to display. However, we needed it to display the output neatly, I added a script bold the column headings, add commas to the numbers in **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**.
 
 The 2017 results displayed positive (green) returns for every stock but $TERP:
 
@@ -179,7 +179,7 @@ The 2017 results displayed positive (green) returns for every stock but $TERP:
 
 $DQ was the top performing stock, gaining nearly 200%. The lowest positively returning stock was $RUN, up 5.5% for the year. Overall, 2017 was an impressive year for green energy stocks. If we compare each stock's performance to a benchmark like the S&P 500, we can see if Steve's parents would just be better off investing in a less volatile mututal fund like $FXAIX. The return for the Fidelity 500 Index Fund was just under +22% for 2017. Impressively, 9 green energy stocks had better returns in 2017 than this benchmark.
 
-I ran the same analysis again using my __refactored script__. It condensed all of the separate subs in my __original script__ into one cohesive piece of code. The full code is displayed above in the **Refactored VBA Script Used in this Analysis** section. As a result, it cut the run time by 65% to 0.27 seconds. The refactored script will come in handy for Steve when he wants to analyze thousands of stocks because he will save a lot of time waiting for the code to run. 
+I ran the same analysis again using my __refactored script__. It condensed all of the separate subs in my __original script__ into one cohesive piece of code. The full code is displayed above in the **Refactored VBA Script Used in this Analysis** section. As a result, it cut the run time by 79% to 0.21 seconds. The refactored script will come in handy for Steve when he wants to analyze thousands of stocks because he will save a lot of time waiting for the code to run. 
 
 ![VBA_Challenge_2017.PNG](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2017.PNG)
 
