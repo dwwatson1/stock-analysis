@@ -193,14 +193,30 @@ I repeated the same steps used in the 2017 analysis for the 2018 analysis of gre
 
 #### Process and Results
 
-I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ 
+I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ Similaryly to 2017 results, the __original script__ took longer than the __refactored script__. The time difference was .74 seconds compared to .26 seconds.
 
-The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively $TERP was the only stock that had negatives returns for both years. 
+__Original script__ timing
+
+https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Stock_Macro.PNG
+
+__Refactored script__ timing
+
+https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG
+
+The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively. $TERP was the only stock that had negatives returns for both years. 
 
 ![2018_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Refactor_Analysis.PNG)
+
+$ENPH saw the best return from 2017 - 2018. As investor myself thinking long-term, I wouldn't necessarily feel comfortable recommending Steve's parents invest in a single stock based on two years of data. In the history of the stock market, 2 years is miniscule and putting all your eggs in one stock's basket is dangerous. $ENPH has had a great run in 2020 but after hitting a February 2021 high, the stock had sold-off significantly. 
+
+![ENPH_Stock](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/ENPH_Stock.PNG)
 
 ## Summmary
 
 ### Advantages and Disadvantages of Refactoring Code
 
+
+
 ### Advantages and Disadvantages of Refactoring Code from this 'Analysis of Green Energy Stock Data'
+
+
