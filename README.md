@@ -157,23 +157,47 @@ To complete the analysis of 2017 green energy stock data for Steve and his paren
 
 Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**. To display the output neatly, I added a script bold the column headings, add commas to the **Total Daily Volume** column, and  show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. 
 
-I was then ready to run my __original script__ script. Because I added a spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
+I was then ready to run my __original script__ script. After running it, a popup box appeared asking __What year would you like to run the analysis on?__ I specified that I wanted to see 2017 data only. 
+
+[Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
+
+Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
 
 Code in script:
- MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
+
+MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
  
  Message box display:
+ 
 ![2017_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Stock_Macro.PNG)
 
-The 2017 results showed positive returns for every stock but $TERP:
+The 2017 results took just under 0.8 seconds to display positive returns for every stock but $TERP:
 
 ![2017_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Refactor_Analysis.PNG)
+
+$DQ was the top performing stock, gaining nearly 200%. The lowest positively returning stock was $RUN, up 5.5% for the year. Overall, 2017 was an impressive year for green energy stocks. If we compare each stock's performance to a benchmark like the S&P 500, we can see if Steve's parents would just be better off investing in a less volatile mututal fund like $FXAIX. The return for the Fidelity 500 Index Fund was just under +22% for 2017. Impressively, 9 green energy stocks had better returns in 2017 than this benchmark.
+
+I ran the same analysis again using my __refactored script__. It condensed all of the separate subs in my __original script__ into one cohesive piece of code. The full code is displayed above in the **Refactored VBA Script Used in this Analysis** section. As a result, it cut the run time by 65% to 0.27 seconds. The refactored script will come in handy for Steve when he wants to analyze thousands of stocks because he will save a lot of time waiting for the code to run. 
+
+![VBA_Challenge_2017.PNG](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2017.PNG)
+
+To make it even easier for Steve, I assigned the refactored script macro to a button called **Refactor Code**. Now Steve can analyze thousands of stocks with the press of a button!
+
+![Refactor_Button.PNG](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Refactor_Button.PNG)
 
 ### Analysis of 2018 Green Energy Stock Data
 
 #### Overview
 
+I repeated the same steps used in the 2017 analysis for the 2018 analysis of green energy stock data. Again, I used two scripts: the [Original_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Original_Script.bas) and the [Refactored_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Refactored_Script.bas) in this section.
+
 #### Process and Results
+
+I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ 
+
+The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively $TERP was the only stock that had negatives returns for both years. 
+
+![2018_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Refactor_Analysis.PNG)
 
 ## Summmary
 
