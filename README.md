@@ -4,11 +4,11 @@
 
 ### Background
 
-Steve's parents want to diversify their investment portfolio by investing in the nascent green energy sector of the stock market. Given the volatility of the new sector, they wanted to know how a group of green energy stocks have historically performed. They've tasked Steve with finding out which ones had positive or negative returns in 2017 and 2018. Steve has asked for my help in performing a few quick analyses, so keep his parents informed on the performance of their portfolio.
+Steve's parents want to diversify their investment portfolio by investing in the nascent green energy sector of the stock market. Given the volatility of the new sector, they wanted to know how a group of green energy stocks has historically performed. They've tasked Steve with finding out which ones had positive or negative returns in 2017 and 2018. Steve has asked for my help in performing a few quick analyses, so keep his parents informed on the performance of their portfolio.
 
 ### Purpose
 
-The purpose of this analysis was to help Steve's parents determine which green energy stocks to invest in. Using ticker, daily pricing (high, low, closing prices), and daily volume from 12 different **green** stocks, I calculated the total daily volume and and annual return for each stock using a VBA script in Excel. Steve specified that he wanted to expand the dataset to include the entire stock market. To do so required a refactored VBA script, one that would provide the same functionality as my first script but run faster. This analysis will not only help Steve's parents determine which stocks invest their money but also allow Steve to use my model for quick, future analysis on thousands of stocks. The excel workbook with both VBA scripts can be found here: [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm).
+The purpose of this analysis was to help Steve's parents determine which green energy stocks to invest in. Using ticker, daily pricing (high, low, closing prices), and daily volume from 12 different **green** stocks, I calculated the total daily volume and annual return for each stock using a VBA script in Excel. Steve specified that he wanted to expand the dataset to include the entire stock market. To do so required a refactored VBA script, one that would provide the same functionality as my first script but run faster. This analysis will not only help Steve's parents determine which stocks invest their money but also allow Steve to use my model for quick, future analysis on thousands of stocks. The excel workbook with both VBA scripts can be found here: [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm).
 
 ## Results and Analysis
 
@@ -151,19 +151,19 @@ The purpose of this analysis was to help Steve's parents determine which green e
 
 #### Overview
 
-To complete the analysis of 2017 green energy stock data for Steve and his parents, I need to create a VBA script to loop through the data of the 12 stocks provided. I'll refer to the first script as the [Original_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Original_Script.bas) in this section. To meet Steve's expectation of being able to use my model in the future for thousands stocks, I needed to create a more efficient, refactored VBA script. I'll refer to the second script as the [Refactored_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Refactored_Script.bas) in this section.
+To complete the analysis of the 2017 green energy stock data for Steve and his parents, I need to create a VBA script to loop through the data of the 12 stocks provided. I'll refer to the first script as the [Original_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Original_Script.bas) in this section. To meet Steve's expectation of being able to use my model in the future for thousands of stocks, I needed to create a more efficient, refactored VBA script. I'll refer to the second script as the [Refactored_Script](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Refactored_Script.bas) in this section.
 
 #### Process and Results
 
-Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**.  I was able to assign this macro to a button called **Year Analysis**. I was then ready to run my __original script__ script. After running it, a popup box appeared asking __What year would you like to run the analysis on?__ I specified that I wanted to see 2017 data only. 
+Using the stock data from 12 green energy stocks, I built my __original script__ to run an analysis on all tickers in 2017. As you can see from the code, I created a format in the output of the **All Stocks Analysis** sheet within [VBA_Challenge](https://github.com/dwwatson1/stock-analysis/blob/main/VBA%20Challenge.xlsm). Then, I initialized an array of all 12 tickers and variables for starting price and ending price.  After establishing loops through the data, I was able to extract data from each ticker to show **Total Daily Volume** and **Return**.  I was able to assign this macro to a button called **Year Analysis**. I was then ready to run my __original script__. After running it, a popup box appeared asking __What year would you like to run the analysis on?__ I specified that I wanted to see 2017 data only. 
 
 ![Year_Analysis_Button](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis_Button.PNG)
 
 ![Year_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/Year_Analysis.PNG)
 
-Because I added another spcification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
+Because I added another specification in my code to start and stop a timer, as well as a message box displaying the total time it took to run it, a message box popped up after I ran it.
 
-Code in script:
+Code in the script:
 
 MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
  
@@ -171,13 +171,13 @@ MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & 
  
 ![2017_Stock_Macro](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Stock_Macro.PNG)
 
-The 2017 results took almost a second to display. However, we needed it to display the output neatly, I added a script bold the column headings, add commas to the numbers in **Total Daily Volume** column, and show only one decimnal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**.
+The 2017 results took almost a second to display. However, we needed it to display the output neatly, I added a script to bold the column headings, add commas to the numbers in the **Total Daily Volume** column, and show only one decimal place for the percentage of **Return**.  I added a conditional formatting script to color the **Return** to show green for a positive return and red for a negative return. I assigned those two separate macros to buttons labeled **Add Coloring** and **Add Formatting**.
 
 The 2017 results displayed positive (green) returns for every stock but $TERP:
 
 ![2017_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2017_Refactor_Analysis.PNG)
 
-$DQ was the top performing stock, gaining nearly 200%. The lowest positively returning stock was $RUN, up 5.5% for the year. Overall, 2017 was an impressive year for green energy stocks. If we compare each stock's performance to a benchmark like the S&P 500, we can see if Steve's parents would just be better off investing in a less volatile mututal fund like $FXAIX. The return for the Fidelity 500 Index Fund was just under +22% for 2017. Impressively, 9 green energy stocks had better returns in 2017 than this benchmark.
+$DQ was the top-performing stock, gaining nearly 200%. The lowest positively returning stock was $RUN, up 5.5% for the year. Overall, 2017 was an impressive year for green energy stocks. If we compare each stock's performance to a benchmark like the S&P 500, we can see if Steve's parents would just be better off investing in a less volatile mutual fund like $FXAIX. The return for the Fidelity 500 Index Fund was just under +22% for 2017. Impressively, 9 green energy stocks had better returns in 2017 than this benchmark.
 
 I ran the same analysis again using my __refactored script__. It condensed all of the separate subs in my __original script__ into one cohesive piece of code. The full code is displayed above in the **Refactored VBA Script Used in this Analysis** section. As a result, it cut the run time by 79% to 0.21 seconds. The refactored script will come in handy for Steve when he wants to analyze thousands of stocks because he will save a lot of time waiting for the code to run. 
 
@@ -195,7 +195,7 @@ I repeated the same steps used in the 2017 analysis for the 2018 analysis of gre
 
 #### Process and Results
 
-I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ Similaryly to 2017 results, the __original script__ took longer than the __refactored script__. The time difference was .86 seconds compared to .21 seconds.
+I repeated running the two scripts but specifying the year **2018** in the popup box __What year would you like to run the analysis on?__ Similar to the 2017 results, the __original script__ took longer than the __refactored script__. The time difference was .86 seconds compared to .21 seconds.
 
 __Original script__ timing
 
@@ -205,26 +205,26 @@ __Refactored script__ timing
 
 ![VBA_Challenge_2018](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/VBA_Challenge_2018.PNG)
 
-The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively. $TERP was the only stock that had negatives returns for both years. 
+The 2018 returns for the 12 green energy stocks were mostly negative, except for $ENPH and $RUN, which saw positive returns of over 80%. The two also saw positive returns in 2017 of 130% and 5.5%, respectively. $TERP was the only stock that had negatives returns for both years. 
 
 ![2018_Refactor_Analysis](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/2018_Refactor_Analysis.PNG)
 
-$ENPH saw the best return from 2017 - 2018. As investor myself thinking long-term, I wouldn't necessarily feel comfortable recommending Steve's parents invest in a single stock based on two years of data. In the history of the stock market, 2 years is miniscule and putting all your eggs in one stock's basket is dangerous. $ENPH has had a great run in 2020 but after hitting a February 2021 high, the stock had sold-off significantly. 
+$ENPH saw the best return from 2017 - 2018. As an investor myself thinking long-term, I wouldn't necessarily feel comfortable recommending Steve's parents invest in a single stock based on two years of data. In the history of the stock market, 2 years is minuscule, and putting all your eggs in one stock's basket is dangerous. $ENPH has had a great run in 2020 but after hitting a February 2021 high, the stock had sold-off significantly. 
 
 ![ENPH_Stock](https://github.com/dwwatson1/stock-analysis/blob/main/Resources/ENPH_Stock.PNG)
 
-## Summmary
+## Summary
 
 ### Advantages and Disadvantages of Refactoring Code
 
 Refactoring code is advantageous because it can take the same output and make the process more neat and efficient. By neat, I mean formatted and organized in a series of steps. This allows me (or even Steve) to look at the code and understand the process. This is helpful for a VBA novice like me. I'm still trying to wrap my head around the logic of each step, but because I'm process-oriented, the organization keeps me on track. 
 
-The disadvantages to refactoring code is that it can be time consuming to create and at times, you may have no idea how long it'll take you to complete the process. The refactoring process could end up getting you stuck or breaking the code. Given how complex the code is, it can be overwhelming debug things, especially for someone like me who is just learning VBA.
+The disadvantage to refactoring code is that it can be time-consuming to create and at times, you may have no idea how long it'll take you to complete the process. The refactoring process could end up getting you stuck or breaking the code. Given how complex the code is, it can be overwhelming to debug things, especially for someone like me who is just learning VBA.
 
 ### Advantages and Disadvantages of Refactoring Code from this 'Analysis of Green Energy Stock Data'
 
-I learned a lot by going through the process refactoring code from my Analysis of Green Energy Stock Data. By creating an organized, step-by-step, guide within the refactored code, the logic of the individual pieces of code started to click with me. The refactored code was also very efficient. When running the original script, you could see the lag occuring in the excel document to process what I wanted it to do. The actual timing was about a second for 2017 and 2018. There was no such lag with the refactored script. Both years were very quick to return results in .21 seconds. With the refactored code, it condensed all the macros I created into one, which makes it a lot easier when you only have to assign one macro to a button. This made it more user-friendly for Steve and me.
+I learned a lot by going through the process of refactoring code from my Analysis of Green Energy Stock Data. By creating an organized, step-by-step, guide within the refactored code, the logic of the individual pieces of code started to click with me. The refactored code was also very efficient. When running the original script, you could see the lag occurring in the excel document to process what I wanted it to do. The actual timing was about a second for 2017 and 2018. There was no such lag with the refactored script. Both years were very quick to return results in .21 seconds. The refactored code condensed all the macros I created into one, which made it a lot easier when you only have to assign one macro to a button. This made it more user-friendly for Steve and me.
 
-The process of building the refactored code was challenging. I had to piece together the module lessons to make progress. I did encounter errors along the way and didn't have a sense of how close I was to fixing or debugging those errors. The tickerIndex and the placement of the next i's messed me up and slowed down the process of building it. I relied on a classmate's help to break down that step. I took a few more tabs at fixing it and finally got a successful run after a few hours. It's helpful to be able to work collaboratively while also making sure I understand the fundamentals. In conclusion, the refactored code is challenging and more time consuming but it pays off dividends when we want to process large amounts of data very quickly, and I'm sure Steve will appreciate this.
+The process of building the refactored code was challenging. I had to piece together the module lessons to make progress. I did encounter errors along the way and didn't have a sense of how close I was to fixing or debugging those errors. The tickerIndex and the placement of the next i's messed me up and slowed down the process of building it. I relied on a classmate's help to break down that step. I took a few more tabs at fixing it and finally got a successful run after a few hours. It's helpful to be able to work collaboratively while also making sure I understand the fundamentals. In conclusion, the refactored code is challenging and more time-consuming but it pays off dividends when we want to process large amounts of data very quickly, and I'm sure Steve will appreciate this.
 
 
